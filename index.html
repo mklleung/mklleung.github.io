@@ -10,7 +10,7 @@
   font-family: Times;
   }
 
-  .centerTitle{
+  #centerTitle{
     position: relative;
     float: left;
     top: 50%;
@@ -22,18 +22,38 @@
     text-align: center;
   }
 
+  #button{
+    position: inherit;
+    float: left;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45pt;
+    font-size: 8vw;
+    text-align: center;
+    display: inline-block;
+
+    background-color: #4169e1;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #button:hover {opacity: 1}
+
 </style>
 <body>
   <div style="border: 2px solid black; border-radius: 25px; position:absolute; top:15px; bottom:15px; left:15px; right:15px;">
-    <h1 class="centerTitle"> Michael K Leung</h1>
-
-
-
-
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">Resume</a></li>
-    </ul>
+    <h1 id="centerTitle"> Michael K Leung</h1>
+    <button id="button" onclick="window.location.href = 'about.html';">Resume</button>
   </div>
 
 </body>
